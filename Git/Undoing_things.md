@@ -28,3 +28,22 @@ Use ```^^``` instead of ```^```
 
         $ git merge --abort
 
+
+
+##### 잘못 push 파일 삭제하기
+원격 저장소와 로컬 저장소 파일 삭제
+    git rm [file name]
+</br></br>
+
+
+##### 원격 저장소 파일만 삭제. 로컬 저장소에 있는 파일은 삭제하지 않음.
+    git rm --cached [file name]
+
+
+
+##### .gitignore 설정
+git add 전에 설정 되어있어야한다.
+
+참고로 원격 저장소에 적용하기 위해서는 commit과 push를 해야함
+    git commit -m "commit message"
+    git push origin master
