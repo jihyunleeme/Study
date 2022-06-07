@@ -44,7 +44,7 @@ Fault tolerance (장애 허용 시스템 / 결함 감내 시스템) : 시스템�
 - metered pricing
 - self-service management
 
-pay-as-you-go pricing
+pay-as-you-go pricing(종량제)
 responsible for development and configuration of 클라우드 소스 such as 가상머신, 웹사이트.
 
 클라우드 소스를 호스팅하는 하드웨어는 클라우드 프로바이더에 의해 관리됨. 퍼블릭 클라우드에서는 다수의 고객들과 클라우드 소스를 사용하고 하드웨어를 공유. 물리적으로 같은 하드웨어에 호스팅된다.
@@ -71,7 +71,68 @@ load balancer 부하 분산장치 - 트래픽, 서버 로드율 증가, 부하�
 a custom web app deployed to Azure. if it was a MS product, then it would be a SaaS.
 
 #### #13
+Azure Storage account (laaS) - blobs, files, queues, table, and disks.  
+Azure SQL DB (PaaS) -  underlying SQL server, is managed by Azure.
 
+SQL server inside a VM, this would be laaS.
 
-#### #
-#### #
+#### #14
+100개의 서버를 가진 온프라미스 네트워크가 있습니다.
+사용자에게 추가적인 리소스를 제공하는 솔루션을 추천할대 무엇이 적절하겠는가? -> hybrid
+
+100개의 서버 = 이미 존제하는 온프라미스 서버를 제거하겠다고 하지 않음.  
+additional이 이 질문의 핵심. 만약에 문제에서 모든 걸 migrating 해버린다는 말이 없었으므로 퍼블릭 클라우드는 답이 될 수 없다.
+
+#### #15
+퍼블릭 클라우드를 통해 내부 내트워크의 용량을 늘릴수있다.  
+더 많은 용량이 필요하면 온프라미스 인프라에 돈은 지불하는 것보다느 클라우드 환경을 설정하고 클라우드 환경에 vpn을 이용하여 온프라미스 네트워크를 연결할 수 있다. 
+퍼블릭 클라우드는 Only guest user만 접근가능하다는 것은 거짓이다. Azure Active Director에 계정으로 어느누구에게나 클라우드 소스를 접근권을 줄수이다.
+- authentication(인증) : 같은 사용자인지 확인
+- authorization(인가) : 권한이 부여된 사람인지 확인하는 작업.
+
+#### #16
+퍼블릭 클라우드라고해서 공용으로 소유되는건 아니다. 클라우드는 마이크로소프트가 소유한다.  
+퍼블릭 클라우드는 유저 계정을 생성하고 적절한 접근 허가를 가지고 있어야한다.
+
+#### #17
+Azure Site Recovery는 가상머신의 결함감내시스템을 제공한다.  
+비즈니스 지속성을 보장하도록 돕습니다.  
+사이트 리커버리는 물리적으로 돌아가고 있는 워크로드와 가상머신을 복제합니다. 주요사이트에서 두번째 장소로.
+
+#### #18
+모든 하드웨어 리소스가 제 3자나 다수의 tenants에게 공유되는 클라우드 타입은 무엇인가?  
+하이브리드
+
+#### #19
+문제에 답이 나와있다 Azure web app은 온프라미스 SQL 서버에 쿼리치는데 이것은 ***하이브리드*** 클라우드의 예시입니다.
+
+#### #20
+비용모델에 대한 질문.  
+비용모델은 두가지 operational / capital  
+Capital expenditrue (buying hardware)  
+Operatiing expenditrue
+
+(21,22,23번 생략...)
+
+#### #24
+Hyper-V physical server  
+마이크로소프트가 당신이 가상머신으로 운영하고 있는 시스템을 업데이트 하지 않습니다.
+
+#### #25
+종량제로 사용한만큼 지불하는것은 Operational 
+CapEx는 무언가 선불로 지불하는 것 예를 들어서 새로운 서버 구입하는 것과 같다.
+
+#### #25
+capEx, opex  
+Opex : pay for service as you use it  
+capEx : buying hareware
+
+#### #26
+laaS : the Azure virtual machine 
+PaaS : Azure web app, Azure logic app, Azure SQL database
+
+#### #34
+capEx : a data center infra
+
+#### #35
+Azure Cosmos DB - PaaS
