@@ -136,3 +136,34 @@ capEx : a data center infra
 
 #### #35
 Azure Cosmos DB - PaaS
+
+### Cloud concept
+퍼블릭 클라우드에 인프라를 호스팅하면 데이터 센터 필요 없음.
+SaaS 사용시 내 역할은 configuring 사스 솔루션
+Paas Auto platform 스케일링, 오토스케일링 제공
+Pay-as-you-go
+Self-service management, no CapEx costs
+Azure SQL database - PaaS
+Azure app service - 개발자가설정가능하도록
+Virtual machine - LaaS
+Azure Storage Account - LaaS
+Migrate, Own apps deployed - PaaS 
+	was Deployed in house -> SaaS impossible
+Azure Site Recovery - fault tolerance
+Site Recovery replicate workloads to a secondary location
+모든사람 with Azure Active Directory Access
+
+### Core Azure Services
+- 다른 가상머신에 연결되지 않게 하려면 가상머신 네트워크 분리해서 배포하기
+- 계속해서 Azure 가상머신 권한 위임을하려면 같은 리소스 그룹에 배포하기(같은 리소스그룹, 관리 쉬움)
+- Warehouse PaaS
+- Availability zone - data center failures
+    - Availiability zone - physically operate location 하나의 Azure 지역내
+- 온프레미스 환경과 연결하기 : virtual network gateway, gateway subnet
+- Azure Active Directory는 subscription을 관리
+- Azure portal에서 account 추가하기
+- Azure files. 파일공유로 온프레미스, 클라우드 엑세스
+- Bidirectional -hub
+- Central - connection
+- Security - sphere
+
