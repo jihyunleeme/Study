@@ -167,3 +167,5 @@ Site Recovery replicate workloads to a secondary location
 - Central - connection
 - Security - sphere
 
+## 태그
+리소스 추가정보, 메타데이터  
