@@ -21,3 +21,6 @@ pacake.json
 
 - ~ (tilt) : Minor level(최하위 레벨)에서 가장 최신버전으로
 - ^ (carot) : Patch level, 최상위 버전의 업데이트까지 자유롭게 허용
+- node_modules 폴더 명령어로 삭제하기
+  - [윈도우] npx rimraf ./\*\*/node_modules
+  - [리눅스] rm -rf ./node_modules
