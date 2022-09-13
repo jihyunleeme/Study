@@ -25,6 +25,6 @@ pacake.json
     - rimraf 패키지 설치 없이
       - npx rimraf ./\*\*/node_modules
     - rimraf 패키지 이용
-      - npm install rimrfa
+      - npm install rimraf
       - rimraf node_modules
   - [리눅스] rm -rf ./node_modules
