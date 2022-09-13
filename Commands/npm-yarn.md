@@ -1,9 +1,10 @@
 ## npm yarn 명령어 정리
 
-| npm                        | yarn                   | 설명                                            |     |
+| npm                        | yarn                   | 설명                                            |  단축 플래그   |
 | -------------------------- | ---------------------- | ----------------------------------------------- | --- |
-| npm install [package]      | yarn add [package]     |                                                 |     |
-| npm uninstall [package]    | yarn remove [pacakge]  | 삭제                                            |     |
+| npm install [package] (--save 생략가능)     | yarn add [package]     |                                |     |
+| npm install [package] --save-dev    | yarn add --dev     | devDependencies에 설치                     |-D    |
+| npm uninstall [package]    | yarn remove [pacakge]  | 삭제                                            |  uni   |
 | npm udpate [package]       | yarn upgrade [package] | 업그레이드                                      |     |
 | npm outdated               |                        | 설치된 패키지 버전확인                          |     |
 | npm show [package] version |                        | 설치된 특정 패키지 버전확인                     |     |
@@ -12,11 +13,6 @@
 | npm cache clean            | yarn cache clean       | cache 삭제                                      |     |
 | npm rebuild                | yarn rebuild           | cache 삭제 후 npm 재설치                        |     |
 
-## 단축어
-
-| 명령어    | 단축 플래그 | 설명 |
-| --------- | ----------- | ---- |
-| uninstall | uni         | 삭제 |
 
 ## Tip
 
