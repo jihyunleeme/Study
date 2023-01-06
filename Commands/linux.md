@@ -25,3 +25,7 @@ rm -fr/test/*
 touch abc.txt
 touch a.txt b.txt c.txt
 ```
+
+### Curl (client URL)
+
+프로토콜을 이용해 URL로 데이터 전송. 서버에 데이터 보내거나 가져올때
