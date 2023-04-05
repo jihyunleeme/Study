@@ -8,7 +8,6 @@
 - DNS는 도메인 이름을 IP주소로 변환
 
 ## DNS는 어떻게 동작하는가
-
 - DNS resolution 프로세스 : hostname(www.example.com)을 컴퓨터 친화적 IP 주소(192.168.1.1)로 변환
 - IP주소는 각 장치에 지정
 - 초기 요청외 사용자의 컴퓨터와 상호작용없음
@@ -28,7 +27,6 @@
   - 일반적으로 다른 위치의 참조를 제공
 
 - TLD nameserver
-
   - 도서관에서 특정 책꽂이
   - Top level domain server(TLD)
   - 특정 IP주소를 탐색하는 다음 단계
